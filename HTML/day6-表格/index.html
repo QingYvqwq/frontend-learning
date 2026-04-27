@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>表格</title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>表头</th>
+                <td>普通格</td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>名字</th>
+                <th>语文</th>
+                <th>数学</th>
+            </tr>
+            <tr>
+                <td>张三</td>
+                <td>90</td>
+                <td>92</td>
+            </tr>
+            <tr>
+                <td>李四</td>
+                <td>85</td>
+                <td>88</td>
+            </tr>
+            
+        </table>
+        <table border="1" style="border-collapse: collapse; padding: 8px;">
+            <!--如果border="1"，则显示边框，若border="0"，则不显示边框-->
+            <tr>
+                <td colspan="2">我占了两列</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td rowspan="2">我占了两行</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <!--第一个格子被上面的rowspan占了，所以从第二列开始-->
+                <td>3</td>
+                <td>4</td>
+            </tr>
+        </table>
+    </body>
+</html>
